@@ -1,6 +1,4 @@
-package ArraysProblems;
-
-import javax.swing.*;
+package BasicArraysProblems;
 
 public class linearSearch {
 

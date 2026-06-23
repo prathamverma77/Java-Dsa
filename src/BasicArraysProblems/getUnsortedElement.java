@@ -1,4 +1,4 @@
-package ArraysProblems;
+package BasicArraysProblems;
 
 public class getUnsortedElement {
 
