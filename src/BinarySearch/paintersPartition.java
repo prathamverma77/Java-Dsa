@@ -54,5 +54,6 @@ public class paintersPartition {
         int k = 2;
 
         System.out.println(paintersPartitionProblem(boards, k));
+//        solved full painters partition
     }
 }
