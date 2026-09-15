@@ -26,7 +26,25 @@ public class singlyLinkedLists {
 
     //INSTERSTIONS all code functions
 
+
+
+
     //insert at head function
-    
+    public voice insertAtHead(int data){
+        //todo
+        Node newNode = new Node(data);
+        //if LL is empty -> head and tail ko newNode pr point krdo
+        if(head == null && tail == null) {
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            newNode.next = head;
+            head = newNode;
+        }
+        //increase the size by 1
+        size++;
+    }
+
 
 }
