@@ -47,4 +47,22 @@ public class singlyLinkedLists {
     }
 
 
+    //insert at end function
+    public void insertAtTail(int data){
+        //todo
+        Node newNode = new Node(data);
+        if(head == null && tail == null){
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            tail.next = newNode;
+            tail = newNode;
+        }
+        size++;
+    }
+
+    //positioning is 1-based indexing
+    
+
 }
