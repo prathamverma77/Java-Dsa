@@ -51,7 +51,7 @@ public class singlyLinkedLists {
     public void insertAtTail(int data){
         //todo
         Node newNode = new Node(data);
-        if(head == null && tail == null){
+        if(head == null && tail == null){   
             head = newNode;
             tail = newNode;
         }
@@ -62,7 +62,6 @@ public class singlyLinkedLists {
         size++;
     }
 
-    //positioning is 1-based indexing
-    
+    //positioning is 1-based indexing lol
 
 }
