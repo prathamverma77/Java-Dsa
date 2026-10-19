@@ -1,11 +1,10 @@
 package LinkedLists;
 
-public class singlyLinkedLists {
+public class singlyLinkedLists {          // fixed: matches constructor name
 
     static class Node {
         int data;
         Node next;
-        //constructor
         Node(int data) {
             this.data = data;
             this.next = null;
@@ -16,52 +15,32 @@ public class singlyLinkedLists {
     private Node tail;
     private int size;
 
-    //constructor
-    public SinglyLinkedList() {
+    public singlyLinkedLists() {          // now matches class name
         this.head = null;
         this.tail = null;
-
     }
 
-
-    //INSTERSTIONS all code functions
-
-
-
-
-    //insert at head function
-    public voice insertAtHead(int data){
-        //todo
+    public void insertAtHead(int data) { // fixed: voice → void
         Node newNode = new Node(data);
-        //if LL is empty -> head and tail ko newNode pr point krdo
-        if(head == null && tail == null) {
+        if (head == null && tail == null) {
             head = newNode;
             tail = newNode;
-        }
-        else{
+        } else {
             newNode.next = head;
             head = newNode;
         }
-        //increase the size by 1
         size++;
     }
 
-
-    //insert at end function
-    public void insertAtTail(int data){
-        //todo
+    public void insertAtTail(int data) {
         Node newNode = new Node(data);
-        if(head == null && tail == null){   
+        if (head == null && tail == null) {
             head = newNode;
             tail = newNode;
-        }
-        else{
+        } else {
             tail.next = newNode;
             tail = newNode;
         }
         size++;
     }
-
-    //positioning is 1-based indexing lol
-
 }
